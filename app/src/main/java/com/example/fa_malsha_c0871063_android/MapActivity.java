@@ -147,6 +147,8 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                 setHomeMarker();
              if (selectedProduct != null ) { //show in map
                     setMarker(new LatLng(selectedProduct.getLatitude(), selectedProduct.getLongitude()), selectedProduct.getName());
+                 LatLng markLocation = new LatLng(selectedProduct.getLatitude(),selectedProduct.getLongitude());
+                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(markLocation, 15));
                 }
             }
 
@@ -237,7 +239,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                     .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                     .snippet("Your Location");
             homeMarker = mMap.addMarker(options);
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15));
+            if(selectedProduct == null) {
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userLocation, 15));
+            }
         }
     }
 
