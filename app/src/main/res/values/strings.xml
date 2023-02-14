@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FA_Malsha_c0871063_Android</string>
+    <string name="add_button_text">Add Product</string>
+    <string name="name_row">Product Name</string>
+    <string name="description_row_name">Product Description</string>
+    <string name="price_row_name">Product Price</string>
+    <string name="location_row_name">Product Location</string>
+    <string name="pick_option">Pick Option</string>
+    <string name="add_new_product_label">Add New Product</string>
+    <string name="product_name_placeholder">Enter Product Name</string>
+    <string name="product_description_placeholder">Enter Product Description</string>
+    <string name="select_product_location">Select Product Location</string>
+    <string name="product_price_placeholder">Enter Product Price</string>
+    <string name="add_product_button_text">Add Product</string>
+    <string name="product_location_placeholder">Select Product Location</string>
+    <string name="map">Map</string>
+    <string name="update_label">Update The Product</string>
+    <string name="update_btn_text">Update Product</string>
+    <string name="google_maps_key">AIzaSyA7VLRfTo6y5y0g0q_X9d07y9Wohm0xxss</string>
+</resources>
